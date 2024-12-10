@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.title, .listform {
+    font-family: 'Permanent Marker';  
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    padding-left: 3rem;
+}
+
+.listform {
+    color: #5E5D5D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    gap: 0.6rem;
+    font-size: 1.5rem;
+    
+    
+}
+
+.badge-title {
+    font-family: 'inter';
+    font-size: 0.6rem;
+    margin: 0.2rem ;
+    justify-items: center;
+    
+}
+
+.badge {
+    display: flex;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 4.6rem;
+    height: 1.7rem;
+    border-radius: 0.3rem;
+    margin-top: 0.1rem;
+}
+.gray {
+    color: black;
+    background-color: #5E5D5D;
+}
+.red {
+    color: #991B1B;
+    background-color: #FEE2E2;
+}
