@@ -6,25 +6,40 @@ import BadgeTitle from "./Components/BadgeTitle"
 
 
 export default function App() {
-  const colors = ['gray', 'red', 'yelow', 'green', 'blue', 'indigo', 'purple', 'pink']  
-  const colorsUp = colors.map(color => color.charAt(0).toUpperCase() + color.slice(1, color.length))
-  console.log(colorsUp)
+
+  const colors = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink']  
+  const colorsUp = 
+    colors.map(color => 
+    color.charAt(0).toUpperCase() + color.slice(1))
+  
     return (
         <div>
              
             <Title>Badges</Title>
-                <ListForm> 
+                <ListForm className="listform"> 
                     Square
                     {colors.map((color, index) =>
                        <BadgeTitle key={color}> 
                             {`${colorsUp[index]}-Square`}
-                            <Badge className={`badge ${color}`}>
+                            <Badge 
+                                className={`badge ${color}`}>
                                 Badge
                             </Badge>
                        </BadgeTitle>      
                         )}  
                 </ListForm>
-                <ListForm> Pill
+                <ListForm className="listform" variant='pill-margin'> 
+                    Pill
+                    {colors.map((color, index) =>
+                       <BadgeTitle key={color}> 
+                            {`${colorsUp[index]}-Pill`}
+                            <Badge 
+                                className={`badge ${color}`}
+                                form='form'>
+                                Badge
+                            </Badge>
+                       </BadgeTitle>      
+                        )}  
                 </ListForm>    
              
         </div>

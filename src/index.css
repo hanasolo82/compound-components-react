@@ -13,6 +13,7 @@
     padding-left: 3rem;
 }
 
+
 .listform {
     color: #5E5D5D;
     display: flex;
@@ -22,7 +23,9 @@
     gap: 0.6rem;
     font-size: 1.5rem;
     
-    
+}
+.pill-margin > :first-child {
+     margin-left: 2.2rem;
 }
 
 .badge-title {
@@ -44,6 +47,9 @@
     border-radius: 0.3rem;
     margin-top: 0.1rem;
 }
+.form {
+    border-radius: 2rem;
+}
 .gray {
     color: black;
     background-color: #5E5D5D;
@@ -51,4 +57,28 @@
 .red {
     color: #991B1B;
     background-color: #FEE2E2;
+}
+.yellow {
+    color: #92400E;
+    background-color:#FEF3C7;
+}
+.green {
+    color: #065F46;
+    background-color: #D1FAE5;
+}
+.blue {
+    color: #1E40AF;
+    background-color: #DBEAFE;
+}
+.indigo {
+    color: #3730A3;
+    background-color: #E0E7FF;
+}
+.purple {
+    color: #5B21B6;
+    background-color: #EDE9FE;
+}
+.pink {
+    color: #9D174D;
+    background-color: #FCE7F3;
 }

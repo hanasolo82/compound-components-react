@@ -1,8 +1,8 @@
 import classnames from "classnames"
 
-export default function Badge({ className , children, ...rest}) {
-    
-    const allClass = classnames(className)
+export default function Badge({ className , children, form, ...rest}) {
+    let formClass = form && `badge ${form}`
+    const allClass = classnames(className, formClass)
     
     return (
         
