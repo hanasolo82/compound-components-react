@@ -1,9 +1,9 @@
 import React from "react"
-import Title from "./Components/Badges/Title"
+import Title from "./Components/Title"
 import ListForm from "./Components/Badges/ListForm"
-import Badge from "./Components/Badge"
-import BadgeTitle from "./Components/BadgeTitle"
-
+import Badge from "./Components/Badges/Badge"
+import BadgeTitle from "./Components/Badges/BadgeTitle"
+import { FcOk } from "react-icons/fc";
 
 export default function App() {
 
@@ -11,11 +11,12 @@ export default function App() {
   const colorsUp = 
     colors.map(color => 
     color.charAt(0).toUpperCase() + color.slice(1))
+ 
   
     return (
         <div>
              
-            <Title>Badges</Title>
+            <Title>1. Badges</Title>
                 <ListForm className="listform"> 
                     Square
                     {colors.map((color, index) =>
@@ -35,13 +36,27 @@ export default function App() {
                             {`${colorsUp[index]}-Pill`}
                             <Badge 
                                 className={`badge ${color}`}
-                                form='form'>
+                                variant='form'>
                                 Badge
                             </Badge>
                        </BadgeTitle>      
                         )}  
                 </ListForm>    
-             
+                <Title>2. Banners</Title>
+                <ListForm className="listform">    
+                    <BadgeTitle> 
+                        <Badge className='banner' variant='success' >
+                        <span><FcOk /> <strong> Congratulations!</strong></span>
+                         <br/>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam
+                        </Badge>
+                    
+                    </BadgeTitle>
+        
+                </ListForm>
+            
+                
+                  
         </div>
     )
 }

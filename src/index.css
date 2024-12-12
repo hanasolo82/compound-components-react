@@ -42,8 +42,8 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    width: 4.6rem;
-    height: 1.7rem;
+    min-width: 4.6rem;
+    min-height: 1.7rem;
     border-radius: 0.3rem;
     margin-top: 0.1rem;
 }
@@ -54,19 +54,19 @@
     color: black;
     background-color: #5E5D5D;
 }
-.red {
+.red, .error {
     color: #991B1B;
     background-color: #FEE2E2;
 }
-.yellow {
+.yellow, .warning {
     color: #92400E;
     background-color:#FEF3C7;
 }
-.green {
+.green, .success {
     color: #065F46;
     background-color: #D1FAE5;
 }
-.blue {
+.blue, .newtral {
     color: #1E40AF;
     background-color: #DBEAFE;
 }
@@ -81,4 +81,9 @@
 .pink {
     color: #9D174D;
     background-color: #FCE7F3;
+}
+/*----------------------Badges---------------------------------*/
+/*----------------------Banners---------------------------------*/
+.banner {
+    text-align: start;
 }
