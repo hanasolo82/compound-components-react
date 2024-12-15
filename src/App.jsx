@@ -3,7 +3,7 @@ import Title from "./Components/Title"
 import ListForm from "./Components/Badges/ListForm"
 import Badge from "./Components/Badges/Badge"
 import BadgeTitle from "./Components/Badges/BadgeTitle"
-import { FcOk } from "react-icons/fc";
+import { FcOk, AiFillWarning, , FcInfo } from "react-icons/fc";
 
 export default function App() {
 
