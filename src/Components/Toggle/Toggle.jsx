@@ -18,3 +18,4 @@ export default function Toggle({children}) {
         </ToggleContext.Provider>
     )
 }
+export { ToggleContext }
