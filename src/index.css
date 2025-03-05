@@ -7,26 +7,34 @@
 }
 
 .title {
+    
     display: flex;
     flex-direction: column;
     font-size: 3rem;
     padding-left: 3rem;
+    
 }
 
+.subtitle {
+    
+    font-family: 'Permanent Marker';
+    color: #5E5D5D;
+    font-size: 1.5rem;
+}
 
 .listform {
-    color: #5E5D5D;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    max-width: 50rem;
     margin-left: 1rem;
     gap: 0.6rem;
-    font-size: 1.5rem;
     
 }
-.pill-margin > :first-child {
-     margin-left: 2.2rem;
-}
+
 
 .badge-title {
     font-family: 'inter';
@@ -54,19 +62,19 @@
     color: black;
     background-color: #5E5D5D;
 }
-.red, .error {
+.red {
     color: #991B1B;
     background-color: #FEE2E2;
 }
-.yellow, .warning {
+.yellow {
     color: #92400E;
     background-color:#FEF3C7;
 }
-.green, .success {
+.green {
     color: #065F46;
     background-color: #D1FAE5;
 }
-.blue, .newtral {
+.blue {
     color: #1E40AF;
     background-color: #DBEAFE;
 }
@@ -84,6 +92,3 @@
 }
 /*----------------------Badges---------------------------------*/
 /*----------------------Banners---------------------------------*/
-.banner {
-    text-align: start;
-}
