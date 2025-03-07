@@ -5,7 +5,7 @@ const ToggleContext = React.createContext()
 // eslint-disable-next-line react/prop-types
 export default function Toggle({children}) {
 
-    const [ on, setOn ] = React.useState(false)
+    const [ on, setOn ] = React.useState(true)
 
     function handleToggle() {
         setOn(prevOn => !prevOn)

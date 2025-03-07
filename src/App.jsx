@@ -3,8 +3,7 @@ import Title from "./Components/Title"
 import ListForm from "./Components/Badges/ListForm"
 import Badge from "./Components/Badges/Badge"
 import BadgeTitle from "./Components/Badges/BadgeTitle"
-
-
+import Banner from "./Components/Banners/index"
 
 export default function App() {
 
@@ -44,6 +43,10 @@ export default function App() {
                         )}  
                 </ListForm>    
                 <Title>2. Banners</Title>
+                <Banner>
+                    <Banner.OneLine></Banner.OneLine>
+                </Banner>
+          
                
                 
                 
