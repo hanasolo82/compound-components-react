@@ -92,10 +92,34 @@
 }
 /*----------------------Badges---------------------------------*/
 /*----------------------Banners---------------------------------*/
-.Banner {
-    border: 1px solid#3730A3;
-    min-height: 100px;
+
+.banner {
+    display: flex;
+    font-family: 'inter';
+    padding: 1rem;
+    min-height: 50px;
     min-width: 100px;
     border-radius: 5px;
+    
+}
 
+.banner-success {
+    background-color: #ECFDF5;
+    color: #065F46;
+
+}
+.banner-warning {
+    background-color: #FFFBEB;
+    color: #92400E;
+}
+.banner-error {
+    background-color: #FEF2F2;
+    color: #92400E;
+}
+.banner-neutral {
+    background-color: #EFF6FF;
+    color: #1E40AF;
+}
+.logo {
+    margin-right: 1rem;
 }

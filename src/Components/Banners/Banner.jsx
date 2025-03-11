@@ -1,17 +1,17 @@
-
-
+import classnames from 'classnames'
 
 // eslint-disable-next-line react/prop-types
-export default function Banner({children}) {
-
-    // first here and then with components to solve doubts..... is creting more doubts istead
-
+export default function Banner({children, className, state}) {
+   // crear context para pasar state a los hijos 
+    let classBanner = state ? `banner-${state}`: null
+    let allClasses = classnames(className, classBanner)
+    
      return (
-        
-             <div  className="Banner">
+            <div className={allClasses}>
+                
                 {children}
+                
             </div>
-        
            
 
      )

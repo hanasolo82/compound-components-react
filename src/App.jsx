@@ -3,15 +3,17 @@ import Title from "./Components/Title"
 import ListForm from "./Components/Badges/ListForm"
 import Badge from "./Components/Badges/Badge"
 import BadgeTitle from "./Components/Badges/BadgeTitle"
-import Banner from "./Components/Banners/index"
-
+import Banner from "./Components/Banners/Banner"
+import BannerTitle from "./Components/Banners/BannerTitle"
+import BannerLogo from "./Components/Banners/BannerLogo"
+import BannerText from "./Components/Banners/BannerText"
 export default function App() {
 
   const colors = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink']  
   const colorsUp = 
     colors.map(color => 
     color.charAt(0).toUpperCase() + color.slice(1))
- 
+  
   
     return (
         <div>
@@ -43,9 +45,18 @@ export default function App() {
                         )}  
                 </ListForm>    
                 <Title>2. Banners</Title>
-                <Banner>
-                    <Banner.OneLine></Banner.OneLine>
+                <Banner className='banner' state='success'>
+                        <BannerLogo/>
+                        <BannerTitle>
+                            Congratulations
+                        </BannerTitle>
+                        <BannerText>
+
+                        </BannerText>
+                    
                 </Banner>
+                
+        
           
                
                 
