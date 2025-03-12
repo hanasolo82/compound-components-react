@@ -1,10 +1,14 @@
 
+
+
 export default function BannerText({children}) {
 
 
     return (
-        <div>
+        
+            <div className="banner-text">
             {children}
-        </div>
+            </div>
+        
     )
 }

@@ -4,7 +4,7 @@ import { ToggleContext } from "./Toggle"
 // eslint-disable-next-line react/prop-types
 export default function ToggleOff({children}) {
 
-    const { handleToggle } = React.useContext(ToggleContext)
+    const { on } = React.useContext(ToggleContext)
 
-    return   handleToggle ? null : children
+    return   on ? null : children
 }

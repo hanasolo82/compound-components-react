@@ -3,10 +3,13 @@ import Title from "./Components/Title"
 import ListForm from "./Components/Badges/ListForm"
 import Badge from "./Components/Badges/Badge"
 import BadgeTitle from "./Components/Badges/BadgeTitle"
+//fix this with index
 import Banner from "./Components/Banners/Banner"
 import BannerTitle from "./Components/Banners/BannerTitle"
 import BannerLogo from "./Components/Banners/BannerLogo"
 import BannerText from "./Components/Banners/BannerText"
+
+import Toggle from './Components/Toggle/index'
 export default function App() {
 
   const colors = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink']  
@@ -45,27 +48,62 @@ export default function App() {
                         )}  
                 </ListForm>    
                 <Title>2. Banners</Title>
-                <Banner className='banner' state='success'>
-                        <BannerLogo/>
-                        <BannerTitle>
-                            Congratulations
-                        </BannerTitle>
-                        <BannerText>
-
-                        </BannerText>
-                    
-                </Banner>
-                
-        
-          
-               
-                
-                
-                       
-                
-            
-                
-                  
+                <Toggle>
+                    <Toggle.Button>
+                        <Banner className='banner' state='success'>
+                                <BannerLogo/>
+                                <BannerTitle> Update adviable
+                                    <Toggle.On>
+                                        <BannerText>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+                                        </BannerText>
+                                    </Toggle.On>
+                                </BannerTitle>
+                        </Banner>
+                    </Toggle.Button>
+                </Toggle>
+                <Toggle>
+                    <Toggle.Button>
+                        <Banner className='banner' state='warning'>
+                                <BannerLogo/>
+                                <BannerTitle> Update adviable
+                                    <Toggle.On>
+                                        <BannerText>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+                                        </BannerText>
+                                    </Toggle.On>
+                                </BannerTitle>
+                        </Banner>
+                    </Toggle.Button>
+                </Toggle>
+                <Toggle>
+                    <Toggle.Button>
+                        <Banner className='banner' state='error'>
+                                <BannerLogo/>
+                                <BannerTitle> Update adviable
+                                    <Toggle.On>
+                                        <BannerText>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+                                        </BannerText>
+                                    </Toggle.On>
+                                </BannerTitle>
+                        </Banner>
+                    </Toggle.Button>
+                </Toggle>
+                <Toggle>
+                    <Toggle.Button>
+                        <Banner className='banner' state='neutral'>
+                                <BannerLogo/>
+                                <BannerTitle> Update adviable
+                                    <Toggle.On>
+                                        <BannerText>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+                                        </BannerText>
+                                    </Toggle.On>
+                                </BannerTitle>
+                        </Banner>
+                    </Toggle.Button>
+                </Toggle>
         </div>
     )
 }

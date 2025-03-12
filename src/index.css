@@ -99,7 +99,9 @@
     padding: 1rem;
     min-height: 50px;
     min-width: 100px;
+    max-width: 50rem;
     border-radius: 5px;
+    margin: 1rem;
     
 }
 
@@ -121,5 +123,16 @@
     color: #1E40AF;
 }
 .logo {
+    font-size: 1.3rem;
     margin-right: 1rem;
+}
+.banner-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.banner-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: lighter;
 }

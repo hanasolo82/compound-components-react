@@ -4,7 +4,7 @@ export default function BannerTitle({children}) {
 
 
     return (
-        <div>
+        <div className="banner-title">
             {children}
         </div>
     )
