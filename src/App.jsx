@@ -10,6 +10,9 @@ import BannerLogo from "./Components/Banners/BannerLogo"
 import BannerText from "./Components/Banners/BannerText"
 
 import Toggle from './Components/Toggle/index'
+import Card from './Components/Cards/index'
+
+
 export default function App() {
 
   const colors = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink']  
@@ -104,6 +107,23 @@ export default function App() {
                         </Banner>
                     </Toggle.Button>
                 </Toggle>
+                <Title>3. Card</Title>
+                    <Card>
+                    <Card.Logo icon={<Card.Cloud />}>
+                        
+                    </Card.Logo> 
+                       <Card.Box>
+                            
+                            <Card.Title>
+                                Easy Deployment 
+                            </Card.Title>
+                            <Card.Text>
+                                Ac tincidunt sapien vehicula erat auctor    pellentesque rhoncus. Et magna sit morbi   lobortis.
+                            </Card.Text>
+                       </Card.Box>
+                    </Card>
+                
+                
         </div>
     )
 }
